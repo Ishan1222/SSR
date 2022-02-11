@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" class="loginback" style="background-image: url('assets/Back.jpg');">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <title>Demo</title>
+
+</head>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<body class="loginbody centered rounded-lg ">
+
+    <div>
+        <form class="px-4 py-3" (submit)="onRegisterSubmit()">
+            <div class="form-group">
+                <label for="exampleDropdownFormEmail1">Username</label>
+                <input type="text" class="form-control" name="username" [(ngModel)]="username" id="username" placeholder="Username" required="true">
+            </div>
+            <div class="form-group">
+                <label for="exampleDropdownFormPassword1">Password</label>
+                <input type="password" class="form-control" name="password" [(ngModel)]="password" id="password" placeholder="Password" required="true">
+            </div>
+            <button class="btn btn-primary login" type="submit" value="submit">Sign Up</button>
+        </form>
+    </div>
+</body>
+
+</html>
